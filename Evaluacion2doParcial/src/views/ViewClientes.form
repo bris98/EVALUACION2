@@ -29,7 +29,7 @@
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jbtn_primero" min="-2" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="jtf_idcliente" alignment="0" pref="75" max="32767" attributes="0"/>
                               <Component id="jtf_nombre" alignment="0" max="32767" attributes="0"/>
@@ -39,24 +39,24 @@
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                      <Component id="jbtn_anterior" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jButton3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jbtn_siguiente" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jButton4" min="-2" max="-2" attributes="0"/>
+                      <Component id="jbtn_ultimo" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
                       <Component id="jbtn_agregar" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jbtn_actualizar" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jbtn_eliminar" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jbtn_modificar" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jbtn_nuevo" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="68" max="32767" attributes="0"/>
+              <EmptySpace pref="96" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -90,17 +90,17 @@
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jbtn_primero" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jbtn_anterior" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jbtn_siguiente" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jbtn_ultimo" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jbtn_agregar" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jbtn_actualizar" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jbtn_eliminar" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jbtn_modificar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jbtn_nuevo" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="70" max="32767" attributes="0"/>
           </Group>
@@ -176,7 +176,7 @@
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="jbtn_primero">
       <Properties>
         <Property name="text" type="java.lang.String" value="&lt;&lt;-"/>
       </Properties>
@@ -184,7 +184,7 @@
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton2">
+    <Component class="javax.swing.JButton" name="jbtn_anterior">
       <Properties>
         <Property name="text" type="java.lang.String" value="&lt;-"/>
       </Properties>
@@ -192,7 +192,7 @@
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton3">
+    <Component class="javax.swing.JButton" name="jbtn_siguiente">
       <Properties>
         <Property name="text" type="java.lang.String" value="-&gt;"/>
       </Properties>
@@ -200,7 +200,7 @@
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton4">
+    <Component class="javax.swing.JButton" name="jbtn_ultimo">
       <Properties>
         <Property name="text" type="java.lang.String" value="-&gt;&gt;"/>
       </Properties>
@@ -211,14 +211,6 @@
     <Component class="javax.swing.JButton" name="jbtn_agregar">
       <Properties>
         <Property name="text" type="java.lang.String" value="AGREGAR"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="jbtn_actualizar">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="ACTUALIZAR"/>
       </Properties>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
@@ -235,6 +227,14 @@
     <Component class="javax.swing.JButton" name="jbtn_modificar">
       <Properties>
         <Property name="text" type="java.lang.String" value="MODIFICAR"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="jbtn_nuevo">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="NUEVO"/>
       </Properties>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>

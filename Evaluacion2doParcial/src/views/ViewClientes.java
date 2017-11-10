@@ -37,14 +37,14 @@ public class ViewClientes extends javax.swing.JPanel {
         jtf_telefono = new javax.swing.JTextField();
         jtf_email = new javax.swing.JTextField();
         jtf_direccion = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        jbtn_primero = new javax.swing.JButton();
+        jbtn_anterior = new javax.swing.JButton();
+        jbtn_siguiente = new javax.swing.JButton();
+        jbtn_ultimo = new javax.swing.JButton();
         jbtn_agregar = new javax.swing.JButton();
-        jbtn_actualizar = new javax.swing.JButton();
         jbtn_eliminar = new javax.swing.JButton();
         jbtn_modificar = new javax.swing.JButton();
+        jbtn_nuevo = new javax.swing.JButton();
 
         jbtn_idcliente.setText("ID CLIENTE");
 
@@ -62,21 +62,21 @@ public class ViewClientes extends javax.swing.JPanel {
             }
         });
 
-        jButton1.setText("<<-");
+        jbtn_primero.setText("<<-");
 
-        jButton2.setText("<-");
+        jbtn_anterior.setText("<-");
 
-        jButton3.setText("->");
+        jbtn_siguiente.setText("->");
 
-        jButton4.setText("->>");
+        jbtn_ultimo.setText("->>");
 
         jbtn_agregar.setText("AGREGAR");
-
-        jbtn_actualizar.setText("ACTUALIZAR");
 
         jbtn_eliminar.setText("ELIMINAR");
 
         jbtn_modificar.setText("MODIFICAR");
+
+        jbtn_nuevo.setText("NUEVO");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -94,7 +94,7 @@ public class ViewClientes extends javax.swing.JPanel {
                             .addComponent(jbtn_idcliente))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jButton1)
+                            .addComponent(jbtn_primero)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(jtf_idcliente, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
                                 .addComponent(jtf_nombre)
@@ -102,21 +102,21 @@ public class ViewClientes extends javax.swing.JPanel {
                                 .addComponent(jtf_email)
                                 .addComponent(jtf_direccion)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton2)
+                        .addComponent(jbtn_anterior)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton3)
+                        .addComponent(jbtn_siguiente)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton4))
+                        .addComponent(jbtn_ultimo))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(55, 55, 55)
                         .addComponent(jbtn_agregar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jbtn_actualizar)
-                        .addGap(18, 18, 18)
                         .addComponent(jbtn_eliminar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jbtn_modificar)))
-                .addContainerGap(68, Short.MAX_VALUE))
+                        .addComponent(jbtn_modificar)
+                        .addGap(18, 18, 18)
+                        .addComponent(jbtn_nuevo)))
+                .addContainerGap(96, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -143,16 +143,16 @@ public class ViewClientes extends javax.swing.JPanel {
                     .addComponent(jtf_direccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3)
-                    .addComponent(jButton4))
+                    .addComponent(jbtn_primero)
+                    .addComponent(jbtn_anterior)
+                    .addComponent(jbtn_siguiente)
+                    .addComponent(jbtn_ultimo))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jbtn_agregar)
-                    .addComponent(jbtn_actualizar)
                     .addComponent(jbtn_eliminar)
-                    .addComponent(jbtn_modificar))
+                    .addComponent(jbtn_modificar)
+                    .addComponent(jbtn_nuevo))
                 .addContainerGap(70, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -163,19 +163,19 @@ public class ViewClientes extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton jButton1;
-    public javax.swing.JButton jButton2;
-    public javax.swing.JButton jButton3;
-    public javax.swing.JButton jButton4;
     public javax.swing.JLabel jLabel3;
     public javax.swing.JLabel jLabel4;
     public javax.swing.JLabel jLabel5;
-    public javax.swing.JButton jbtn_actualizar;
     public javax.swing.JButton jbtn_agregar;
+    public javax.swing.JButton jbtn_anterior;
     public javax.swing.JButton jbtn_eliminar;
     public javax.swing.JLabel jbtn_idcliente;
     public javax.swing.JButton jbtn_modificar;
     public javax.swing.JLabel jbtn_nombre;
+    public javax.swing.JButton jbtn_nuevo;
+    public javax.swing.JButton jbtn_primero;
+    public javax.swing.JButton jbtn_siguiente;
+    public javax.swing.JButton jbtn_ultimo;
     public javax.swing.JTextField jtf_direccion;
     public javax.swing.JTextField jtf_email;
     public javax.swing.JTextField jtf_idcliente;

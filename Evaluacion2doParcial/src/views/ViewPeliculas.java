@@ -34,7 +34,6 @@ public class ViewPeliculas extends javax.swing.JPanel {
         jLabel5 = new javax.swing.JLabel();
         jtf_idpelicula = new javax.swing.JTextField();
         jtf_nombre = new javax.swing.JTextField();
-        jtf_tipo = new javax.swing.JTextField();
         jtf_duracion = new javax.swing.JTextField();
         jtf_descripcion = new javax.swing.JTextField();
         jbtn_siguiente = new javax.swing.JButton();
@@ -45,6 +44,8 @@ public class ViewPeliculas extends javax.swing.JPanel {
         jbtn_actualizar = new javax.swing.JButton();
         jbtn_modificar = new javax.swing.JButton();
         jbtn_nuevo = new javax.swing.JButton();
+        jcb_formato = new javax.swing.JComboBox<>();
+        jbtn_eliminar = new javax.swing.JButton();
 
         jLabel1.setText("ID PELICULA");
 
@@ -72,6 +73,10 @@ public class ViewPeliculas extends javax.swing.JPanel {
 
         jbtn_nuevo.setText("NUEVO");
 
+        jcb_formato.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        jbtn_eliminar.setText("ELIMINAR");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -92,10 +97,10 @@ public class ViewPeliculas extends javax.swing.JPanel {
                                         .addComponent(jLabel2)
                                         .addComponent(jLabel3))
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(jtf_nombre, javax.swing.GroupLayout.DEFAULT_SIZE, 84, Short.MAX_VALUE)
-                                        .addComponent(jtf_tipo)
-                                        .addComponent(jtf_idpelicula, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jtf_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jtf_idpelicula, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jcb_formato, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(77, 77, 77)
                                 .addComponent(jbtn_primero)
@@ -110,7 +115,9 @@ public class ViewPeliculas extends javax.swing.JPanel {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jtf_descripcion, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(97, 97, 97)
+                        .addGap(6, 6, 6)
+                        .addComponent(jbtn_eliminar)
+                        .addGap(18, 18, 18)
                         .addComponent(jbtn_agregar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jbtn_actualizar)
@@ -118,7 +125,7 @@ public class ViewPeliculas extends javax.swing.JPanel {
                         .addComponent(jbtn_modificar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jbtn_nuevo)))
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap(22, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -134,7 +141,7 @@ public class ViewPeliculas extends javax.swing.JPanel {
                 .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(jtf_tipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jcb_formato, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(36, 36, 36)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
@@ -151,10 +158,10 @@ public class ViewPeliculas extends javax.swing.JPanel {
                             .addComponent(jbtn_agregar)
                             .addComponent(jbtn_actualizar)
                             .addComponent(jbtn_modificar)
-                            .addComponent(jbtn_nuevo))
+                            .addComponent(jbtn_nuevo)
+                            .addComponent(jbtn_eliminar))
                         .addGap(14, 14, 14))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jbtn_ultimo)
                             .addComponent(jbtn_siguiente)
@@ -174,15 +181,16 @@ public class ViewPeliculas extends javax.swing.JPanel {
     public javax.swing.JButton jbtn_actualizar;
     public javax.swing.JButton jbtn_agregar;
     public javax.swing.JButton jbtn_amterior;
+    public javax.swing.JButton jbtn_eliminar;
     public javax.swing.JButton jbtn_modificar;
     public javax.swing.JButton jbtn_nuevo;
     public javax.swing.JButton jbtn_primero;
     public javax.swing.JButton jbtn_siguiente;
     public javax.swing.JButton jbtn_ultimo;
+    public javax.swing.JComboBox<String> jcb_formato;
     public javax.swing.JTextField jtf_descripcion;
     public javax.swing.JTextField jtf_duracion;
     public javax.swing.JTextField jtf_idpelicula;
     public javax.swing.JTextField jtf_nombre;
-    public javax.swing.JTextField jtf_tipo;
     // End of variables declaration//GEN-END:variables
 }

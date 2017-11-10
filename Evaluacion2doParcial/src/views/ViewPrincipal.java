@@ -27,7 +27,36 @@ public class ViewPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jmi_peliculas = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jmi_clientes = new javax.swing.JMenuItem();
+        jmi_renta = new javax.swing.JMenuItem();
+        jmi_salir = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jmi_peliculas.setText("menu");
+
+        jMenuItem1.setText("Peliculas");
+        jmi_peliculas.add(jMenuItem1);
+
+        jmi_clientes.setText("Clientes");
+        jmi_peliculas.add(jmi_clientes);
+
+        jmi_renta.setText("Renta");
+        jmi_peliculas.add(jmi_renta);
+
+        jmi_salir.setText("salir");
+        jmi_peliculas.add(jmi_salir);
+
+        jMenuBar1.add(jmi_peliculas);
+
+        jMenu2.setText("Edit");
+        jMenuBar1.add(jMenu2);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -37,7 +66,7 @@ public class ViewPrincipal extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 279, Short.MAX_VALUE)
         );
 
         pack();
@@ -79,5 +108,12 @@ public class ViewPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JMenu jMenu2;
+    public javax.swing.JMenuBar jMenuBar1;
+    public javax.swing.JMenuItem jMenuItem1;
+    public javax.swing.JMenuItem jmi_clientes;
+    public javax.swing.JMenu jmi_peliculas;
+    public javax.swing.JMenuItem jmi_renta;
+    public javax.swing.JMenuItem jmi_salir;
     // End of variables declaration//GEN-END:variables
 }
